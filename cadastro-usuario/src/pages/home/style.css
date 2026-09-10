@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Share Tech", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #363467 0%, rgba(30, 29, 79, 0.8) 100%);
+}
+
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Formulário de Cadastro */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #2E2D4E;
+  width: 400px;
+  max-width: 90%;
+  margin-bottom: 30px;
+
+  & input {
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    background-color: #363653;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 15px;
+    outline: none;
+  }
+
+  & button {
+    border-radius: 30px;
+    background-color: #8b8ae1;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.error-message {
+  font-size: 18px;
+  font-weight: 200;
+  color: rgb(247, 102, 102);
+}
+
+/* Card do Usuário */
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2e4e;
+  margin: 10px 0;
+  padding: 24px;
+  width: 400px;
+  max-width: 90%;
+  min-height: 140px;
+  border-radius: 10px;
+
+  /* Conteúdo da esquerda (dados + Ver ID) */
+  & > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    text-align: left;
+  }
+
+  & p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+
+    & span {
+      font-weight: 400;
+    }
+  }
+
+  /* Botão Ver ID */
+  & .mostrar-id {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #a0aec0;
+    padding: 0;
+
+    &:hover {
+      color: wheat;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Coluna lateral de ações (Lixeira e Editar) */
+.actions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Botão da Lixeira */
+.delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover img {
+    opacity: 0.7;
+  }
+}
+
+/* Botão de Editar */
+.editar-btn {
+  font-size: 14px;
+  font-weight: 500;
+  background: transparent;
+  border: 1px solid #4a5568;
+  border-radius: 4px;
+  padding: 4px 12px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: #4a5568;
+    color: wheat;
+    border-color: wheat;
+  }
+}
+
+/* Ajuste de contraste para o texto dos inputs */
+form input::placeholder {
+  color: #a0aec0;
+  opacity: 1;
+}
+
+/* Garante o ponteiro de clique no botão Ver ID */
+.card .mostrar-id {
+  cursor: pointer;
+}

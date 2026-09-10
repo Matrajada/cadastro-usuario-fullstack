@@ -1,0 +1,22 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente e segredos
+.env
+.env.local
+
+# Builds de produção
+dist/
+build/
+
+# Prisma
+/src/generated/prisma
+prisma/*.db
+
+# Arquivos do sistema e logs
+npm-debug.log*
+.DS_Store
+
+# Extensões IDE e IA
+.claude/
+.windsurf/
