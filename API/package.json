@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "contract:emit": "prisma contract emit"
+    "contract:emit": "prisma contract emit",
+    "start": "npx tsx server.js"
   },
   "keywords": [],
   "author": "",
